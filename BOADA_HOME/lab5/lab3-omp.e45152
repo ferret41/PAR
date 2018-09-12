@@ -1,0 +1,11 @@
+solver-omp.c: In function ‘relax_jacobi’:
+solver-omp.c:25:19: warning: implicit declaration of function ‘omp_get_num_threads’; did you mean ‘__builtin_omp_get_num_threads’? [-Wimplicit-function-declaration]
+     int howmany = omp_get_num_threads();
+                   ^~~~~~~~~~~~~~~~~~~
+                   __builtin_omp_get_num_threads
+solver-omp.c:26:19: warning: implicit declaration of function ‘omp_get_thread_num’; did you mean ‘__builtin_omp_get_thread_num’? [-Wimplicit-function-declaration]
+     int blockid = omp_get_thread_num();
+                   ^~~~~~~~~~~~~~~~~~
+                   __builtin_omp_get_thread_num
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+mpi2prv: Cannot open file pointed by EXTRAE_LABELS (./user-events.dat)

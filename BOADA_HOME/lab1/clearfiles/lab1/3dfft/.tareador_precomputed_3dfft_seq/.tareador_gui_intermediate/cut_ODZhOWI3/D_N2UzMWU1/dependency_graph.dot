@@ -1,0 +1,17 @@
+digraph G {
+ranksep=2.5; nodesep=2.5 penwidth=7
+subgraph cluster0 {
+label="MAIN_TAREADOR\nID=0\ninst=593772"
+color="#0000FF"; style=filled; fillcolor="#0000FF40"
+	 task_0__0 [fontsize=5, height=1,width=1, fixedsize=true,shape=triangle,color="#0000FF",label="MAIN_TAREADOR\nID=0__0\ninst=108\nnesting=0\nchildren_pot_tasks=3",style=filled]
+	 task_0__1 [fontsize=5, height=1,width=1, fixedsize=true,shape=triangle,color="#0000FF",label="MAIN_TAREADOR\nID=0__1\ninst=0\nnesting=0\nchildren_pot_tasks=3",style=filled]
+	 task_1 [fontsize=5, height=1,width=1, fixedsize=true,shape=ellipse,color="#00FF00",label="start_plan_forward\nID=1\ninst=14\nnesting=1\nchildren_pot_tasks=0",style=filled]
+	 task_2 [fontsize=20.03785081361737, height=4.007570162723474,width=4.007570162723474, fixedsize=true,shape=trapezium,color="#FF0000",label="init_complex_grid\nID=2\ninst=54442\nnesting=1\nchildren_pot_tasks=0",style=filled]
+	 task_3 [fontsize=31.502678221027168, height=6.300535644205434,width=6.300535644205434, fixedsize=true,shape=box,color="#FFFF00",label="ffts1_and_transpositions\nID=3\ninst=539208\nnesting=1\nchildren_pot_tasks=0",style=filled]
+}
+	 task_2  ->  task_3 [arrowsize=2.6457513110645907, penwidth=7,style=solid color=blue]
+	 task_0__0  ->  task_2 [arrowsize=2.6457513110645907, penwidth=7,style=dotted color=yellow]
+	 task_0__0  ->  task_1 [arrowsize=2.6457513110645907, penwidth=7,style=dotted color=yellow]
+	 task_3  ->  task_0__1 [arrowsize=2.6457513110645907, penwidth=7,style=dashed color=green]
+	 task_1  ->  task_3 [arrowsize=2.6457513110645907, penwidth=7,style=solid color=blue]
+}

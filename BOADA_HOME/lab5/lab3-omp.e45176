@@ -1,0 +1,7 @@
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: Error! Hardware counter PAPI_TOT_CYC (0x8000003b) is not available. Check set 1.
+Extrae: Error! Hardware counter PAPI_TOT_INS (0x80000032) is not available. Check set 1.
+Extrae: Error! Hardware counter PAPI_FP_INS (0x80000034) is not available. Check set 1.
+Extrae: Error! Hardware counter PAPI_LST_INS (0x8000003c) is not available. Check set 1.
+Extrae: Set 1 of counters seems to be empty/invalid, skipping
+mpi2prv: Cannot open file pointed by EXTRAE_LABELS (./user-events.dat)

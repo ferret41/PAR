@@ -1,0 +1,4 @@
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: OMP_NUM_THREADS is mandatory for this tracing library!
+Extrae: Setting OMP_NUM_THREADS to 24
+mpi2prv: Cannot open file pointed by EXTRAE_LABELS (./user-events.dat)

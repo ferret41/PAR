@@ -1,0 +1,1 @@
+lscpu > "$HOSTNAME"-info.txt

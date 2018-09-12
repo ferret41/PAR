@@ -1,0 +1,30 @@
+/scratch/nas/1/par2108/.profile: line 1: ./environment.bash: No such file or directory
+solver-omp.c:1:1: error: expected identifier or ‘(’ before ‘+’ token
+ +#include "heat.h" 
+ ^
+solver-omp.c:1:2: error: stray ‘#’ in program
+ +#include "heat.h" 
+  ^
+solver-omp.c: In function ‘relax_jacobi’:
+solver-omp.c:43:5: warning: implicit declaration of function ‘omp_get_num_threads’ [-Wimplicit-function-declaration]
+     int howmany = omp_get_num_threads();
+     ^
+solver-omp.c:44:5: warning: implicit declaration of function ‘omp_get_thread_num’ [-Wimplicit-function-declaration]
+     int blockid = omp_get_thread_num(); 
+     ^
+solver-omp.c:46:5: warning: implicit declaration of function ‘lowerb’ [-Wimplicit-function-declaration]
+     int i_start = lowerb(blockid, howmany, sizex);
+     ^
+solver-omp.c:47:5: warning: implicit declaration of function ‘upperb’ [-Wimplicit-function-declaration]
+     int i_end = upperb(blockid, howmany, sizex);
+     ^
+solver-omp.c:49:5: warning: implicit declaration of function ‘max’ [-Wimplicit-function-declaration]
+     for (int i=max(1, i_start); i<= min(sizex-2, i_end); i++) {
+     ^
+solver-omp.c:49:5: error: declaration of non-variable ‘max’ in ‘for’ loop initial declaration
+solver-omp.c:49:5: warning: implicit declaration of function ‘min’ [-Wimplicit-function-declaration]
+solver-omp.c: In function ‘relax_gauss’:
+solver-omp.c:77:7: error: declaration of non-variable ‘max’ in ‘for’ loop initial declaration
+       for (int i=max(1, i_start); i<= min(sizex-2, i_end); i++) {
+       ^
+make: *** [heat-omp] Error 1

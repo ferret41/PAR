@@ -1,0 +1,3 @@
+make: 'heat' is up to date.
+gcc  -Wall -std=c99 -O3 -fopenmp heat-omp.c solver-omp.c misc.o -lm  -o heat-omp
+Makefile:24: recipe for target 'heat-omp' failed

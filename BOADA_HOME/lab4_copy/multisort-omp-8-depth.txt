@@ -1,0 +1,65 @@
+1
+Initialization time in seconds: 0.146403
+Multisort execution time: 1.091768
+data IS ordered; Check sorted data execution time: 0.041969
+Multisort program finished
+2
+Initialization time in seconds: 0.139157
+Multisort execution time: 1.068216
+data IS ordered; Check sorted data execution time: 0.039961
+Multisort program finished
+4
+Initialization time in seconds: 0.147084
+Multisort execution time: 1.020621
+data IS ordered; Check sorted data execution time: 0.044923
+Multisort program finished
+8
+Initialization time in seconds: 0.140120
+Multisort execution time: 0.965995
+data IS ordered; Check sorted data execution time: 0.045292
+Multisort program finished
+16
+Initialization time in seconds: 0.139624
+Multisort execution time: 0.904038
+data IS ordered; Check sorted data execution time: 0.043277
+Multisort program finished
+32
+Initialization time in seconds: 0.142802
+Multisort execution time: 0.930245
+data IS ordered; Check sorted data execution time: 0.046619
+Multisort program finished
+64
+Initialization time in seconds: 0.142636
+Multisort execution time: 0.997809
+data IS ordered; Check sorted data execution time: 0.044150
+Multisort program finished
+128
+Initialization time in seconds: 0.142574
+Multisort execution time: 0.972678
+data IS ordered; Check sorted data execution time: 0.040424
+Multisort program finished
+256
+Initialization time in seconds: 0.140651
+Multisort execution time: 0.915547
+data IS ordered; Check sorted data execution time: 0.043862
+Multisort program finished
+512
+Initialization time in seconds: 0.145374
+Multisort execution time: 0.949438
+data IS ordered; Check sorted data execution time: 0.044203
+Multisort program finished
+1024
+Initialization time in seconds: 0.140646
+Multisort execution time: 1.052223
+data IS ordered; Check sorted data execution time: 0.040187
+Multisort program finished
+2048
+Initialization time in seconds: 0.145011
+Multisort execution time: 0.951000
+data IS ordered; Check sorted data execution time: 0.040913
+Multisort program finished
+4096
+Initialization time in seconds: 0.147432
+Multisort execution time: 1.026648
+data IS ordered; Check sorted data execution time: 0.040202
+Multisort program finished

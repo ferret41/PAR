@@ -1,0 +1,33 @@
+make: 'multisort-omp' is up to date.
+merger: Output trace format is: Paraver
+merger: Extrae 3.5.1
+mpi2prv: Assigned nodes < boada-3 >
+mpi2prv: Assigned size per processor < 2 Mbytes >
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000000.mpit is object 1.1.1 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000001.mpit is object 1.1.2 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000002.mpit is object 1.1.3 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000003.mpit is object 1.1.4 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000004.mpit is object 1.1.5 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000005.mpit is object 1.1.6 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000006.mpit is object 1.1.7 on node boada-3 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab4/set-0/TRACE@boada-3.0000031383000000000007.mpit is object 1.1.8 on node boada-3 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Time Synchronization disabled.
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 838848 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 1262687 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! multisort-omp_8.prv has been generated.

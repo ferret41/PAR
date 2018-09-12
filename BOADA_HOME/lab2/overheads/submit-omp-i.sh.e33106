@@ -1,0 +1,11 @@
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: OMP_NUM_THREADS is mandatory for this tracing library!
+Extrae: Setting OMP_NUM_THREADS to 24
+
+libgomp: Thread creation failed: Resource temporarily unavailable
+fopen: No such file or directory
+mpi2prv Error: Opening trace file /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000001235000000000000.mpit
+AddFile_FS: Invalid argument
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...

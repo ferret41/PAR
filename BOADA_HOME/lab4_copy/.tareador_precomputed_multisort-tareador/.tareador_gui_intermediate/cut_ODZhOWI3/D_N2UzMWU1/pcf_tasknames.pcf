@@ -1,0 +1,14 @@
+EVENT_TYPE
+0     7003     running task
+VALUES
+0     task_end
+1     MAIN_TAREADOR
+2     multisort_1
+3     multisort_2
+4     multisort_3
+5     multisort_4
+6     merge_in_sort_1
+7     merge_1
+8     merge_2
+9     merge_in_sort_2
+10     merge_in_sort_3

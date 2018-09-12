@@ -1,0 +1,13 @@
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+Extrae: OMP_NUM_THREADS is mandatory for this tracing library!
+Extrae: Setting OMP_NUM_THREADS to 24
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-3.0000013011000000000000.ttmp to /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-3.0000013011000000000000.mpit
+rename: No such file or directory
+Extrae: Error while trying to move /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-3.0000013011000000000001.ttmp to /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-3.0000013011000000000001.mpit
+fopen: No such file or directory
+mpi2prv Error: Opening trace file ./set-0/TRACE@boada-3.0000013011000000000000.mpit
+AddFile_FS: Invalid argument
+mpi2prv: Error creating file set
+mpi2prv: Error! Some of the processors failed create trace descriptors
+mpi2prv: An error has been encountered when generating the tracefile. Dying...

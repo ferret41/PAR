@@ -1,0 +1,16 @@
+mandel-omp.c: In function ‘mandelbrot’:
+mandel-omp.c:95:3: error: expected expression before ‘/’ token
+   /#pragma omp task
+   ^
+mandel-omp.c:95:4: error: stray ‘#’ in program
+   /#pragma omp task
+    ^
+make: *** [mandel-omp] Error 1
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+mpi2prv: Cannot open file pointed by EXTRAE_LABELS (./user-events.dat)
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+mpi2prv: Cannot open file pointed by EXTRAE_LABELS (./user-events.dat)
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+mpi2prv: Cannot open file pointed by EXTRAE_LABELS (./user-events.dat)
+Extrae: WARNING! omp_get_thread_num_real is a NULL pointer. Did the initialization of this module trigger? Retrying initialization...
+mpi2prv: Cannot open file pointed by EXTRAE_LABELS (./user-events.dat)

@@ -1,0 +1,111 @@
+make: 'pi_seq' is up to date.
+make: 'pi_omp' is up to date.
+Executing pi_seq sequentially
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589971 6.713645
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589971 6.707447
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589971 6.295748
+ELAPSED TIME MIN OF 3 EXECUTIONS =6.295748
+
+pi_omp 1000000000 1 12 3
+Starting OpenMP executions...
+Executing pi_omp with 1 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589971 5.708552
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589971 6.712185
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589971 6.699219
+ELAPSED TIME MIN OF 3 EXECUTIONS =5.708552
+
+Executing pi_omp with 2 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589901 3.369684
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589901 3.370348
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589901 3.368313
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.368313
+
+Executing pi_omp with 3 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589961 1.919480
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589962 1.889901
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589962 1.884244
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.884244
+
+Executing pi_omp with 4 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589821 1.472201
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589821 1.443357
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589821 1.455352
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.443357
+
+Executing pi_omp with 5 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589596 1.192316
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589595 1.179697
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589596 1.195992
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.179697
+
+Executing pi_omp with 6 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589683 0.990305
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589683 1.014614
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589682 0.998554
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.990305
+
+Executing pi_omp with 7 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589630 0.851263
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589630 0.858255
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589630 0.885101
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.851263
+
+Executing pi_omp with 8 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589769 0.770687
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589769 0.765227
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589770 0.843614
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.765227
+
+Executing pi_omp with 9 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589655 0.844973
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589656 0.780209
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589655 0.759106
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.759106
+
+Executing pi_omp with 10 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589794 0.727758
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589794 0.804052
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589794 0.748449
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.727758
+
+Executing pi_omp with 11 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589660 0.662937
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589660 0.619929
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589660 0.780836
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.619929
+
+Executing pi_omp with 12 threads
+Run 0...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589859 0.855190
+Run 1...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589859 0.790708
+Run 2...Elapsed time = Number pi after 1000000000 iterations = 3.141592653589860 0.716651
+ELAPSED TIME MIN OF 3 EXECUTIONS =0.716651
+
+Resultat de l'experiment (tambe es troben a  ./elapsed.txt  i  ./speedup.txt  )
+#threads	Elapsed min
+1   5.708552
+2   3.368313
+3   1.884244
+4   1.443357
+5   1.179697
+6   0.990305
+7   0.851263
+8   0.765227
+9   0.759106
+10   0.727758
+11   0.619929
+12   0.716651
+
+#threads	Speedup
+1   1.10286251224478641869
+2   1.86911014504887164583
+3   3.34125941226295532850
+4   4.36187859275286710079
+5   5.33675002988055407447
+6   6.35738282650294606207
+7   7.39577310419928976121
+8   8.22729464590245770209
+9   8.29363488103110764504
+10   8.65088119951962053319
+11   10.15559523751913525581
+12   8.78495669440215669830
+

@@ -1,0 +1,35 @@
+>>>MAIN_TAREADOR:0
+964:1:7XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ >>>init_A:15
+223:2:2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  0:128:0:loads::stores:[0,128)
+  11:4:11:loads::stores:[0,4)
+ 0:128:0:loads::stores:[0,128)
+ 11:4:11:loads::stores:[0,4)
+ <<<init_A:244:children:[]
+ >>>init_B:244
+483:4:4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  10:8:10:loads:[0,8):stores:
+  11:4:11:loads::stores:[0,4)
+  12:128:12:loads::stores:[0,128)
+ 10:8:10:loads:[0,8):stores:
+ 11:4:11:loads::stores:[0,4)
+ 12:128:12:loads::stores:[0,128)
+ <<<init_B:505:children:[]
+ >>>dot_product:506
+809:6:6XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  0:128:0:loads:[0,128):stores:
+  9:8:9:loads::stores:[0,8)
+  10:8:10:loads:[0,8):stores:
+  12:128:12:loads:[0,128):stores:
+ 0:128:0:loads:[0,128):stores:
+ 9:8:9:loads::stores:[0,8)
+ 10:8:10:loads:[0,8):stores:
+ 12:128:12:loads:[0,128):stores:
+ <<<dot_product:105234:children:[]
+0:128:0:loads::stores:[0,128)
+9:8:9:loads::stores:[0,8)
+10:8:10:loads:[0,8):stores:
+11:4:11:loads::stores:[0,4)
+12:128:12:loads::stores:[0,128)
+<<<MAIN_TAREADOR:105234:children:[2, 4, 6]

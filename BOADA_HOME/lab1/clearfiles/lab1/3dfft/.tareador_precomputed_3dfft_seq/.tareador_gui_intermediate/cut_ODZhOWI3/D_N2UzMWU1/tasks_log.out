@@ -1,0 +1,17 @@
+TASK:0:MAIN_TAREADOR:1:7:0:593772
+ section:0:0:1:7:0:593772
+ section:0:1:None:7:593772:593772
+ TASK:1:start_plan_forward:2:2:21:35
+  1:8:1:loads::stores:[0,8)
+  section:1:0:2:2:21:35
+    1:8:1:loads::stores:[0,8)
+ TASK:2:init_complex_grid:4:4:69:54511
+  0:8000:0:loads::stores:[0,8000)
+  section:2:0:4:4:69:54511
+    0:8000:0:loads::stores:[0,8000)
+ TASK:3:ffts1_and_transpositions:6:6:54544:593752
+  0:8000:0:loads:[0,8000):stores:[0,8000)
+  1:8:1:loads:[0,8):stores:
+  section:3:0:6:6:54544:593752
+    0:8000:0:loads:[0,8000):stores:[0,8000)
+    1:8:1:loads:[0,8):stores:

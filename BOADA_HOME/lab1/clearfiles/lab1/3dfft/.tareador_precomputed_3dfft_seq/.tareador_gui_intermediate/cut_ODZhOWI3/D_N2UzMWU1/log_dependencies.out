@@ -1,0 +1,31 @@
+printing dependencies for unit id: (0, 0)
+ OUTGOING DEPENDENCIES:
+  dep: (0, 0) -> (1, 0);  time 21 -> 0
+  dep: (0, 0) -> (2, 0);  time 55 -> 0
+  dep: (0, 0) -> (3, 0);  time 88 -> 0
+ INCOMING DEPENDENCIES:
+printing dependencies for unit id: (0, 1)
+ OUTGOING DEPENDENCIES:
+ INCOMING DEPENDENCIES:
+  dep: (3, 0) -> (0, 1);  time 539208 -> 0
+printing dependencies for unit id: (1, 0)
+ OUTGOING DEPENDENCIES:
+  dep: (1, 0) -> (3, 0);  time 14 -> 0
+1:8:1:[0,8)
+ INCOMING DEPENDENCIES:
+  dep: (0, 0) -> (1, 0);  time 21 -> 0
+printing dependencies for unit id: (2, 0)
+ OUTGOING DEPENDENCIES:
+  dep: (2, 0) -> (3, 0);  time 54442 -> 0
+0:8000:0:[0,8000)
+ INCOMING DEPENDENCIES:
+  dep: (0, 0) -> (2, 0);  time 55 -> 0
+printing dependencies for unit id: (3, 0)
+ OUTGOING DEPENDENCIES:
+  dep: (3, 0) -> (0, 1);  time 539208 -> 0
+ INCOMING DEPENDENCIES:
+  dep: (0, 0) -> (3, 0);  time 88 -> 0
+  dep: (1, 0) -> (3, 0);  time 14 -> 0
+1:8:1:[0,8)
+  dep: (2, 0) -> (3, 0);  time 54442 -> 0
+0:8000:0:[0,8000)

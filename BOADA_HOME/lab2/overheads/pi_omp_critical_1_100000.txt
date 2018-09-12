@@ -1,0 +1,44 @@
+Welcome to Extrae 3.5.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2108/lab2/overheads
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 24 threads
+
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000007.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000008.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000009.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000010.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000011.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000012.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000013.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000014.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000015.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000016.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000017.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000018.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000019.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000020.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000021.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000022.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab2/overheads/set-0/TRACE@boada-4.0000010148000000000023.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.

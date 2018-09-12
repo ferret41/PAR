@@ -1,0 +1,11 @@
+speedup: 3.998
+1 MAIN_TAREADOR 1 0.0
+2 multisort_1 2 0.43 len(0.25) dep(0.08) conc(0.11)
+3 multisort_2 3 0.43 len(0.25) dep(0.08) conc(0.11)
+4 multisort_3 4 0.43 len(0.25) dep(0.08) conc(0.11)
+5 multisort_4 5 0.43 len(0.25) dep(0.08) conc(0.11)
+6 merge_in_sort_1 6 0.28 len(0.00) dep(0.17) conc(0.11)
+7 merge_1 7 0.18 len(0.00) dep(0.07) conc(0.11)
+8 merge_2 8 0.21 len(0.00) dep(0.10) conc(0.11)
+9 merge_in_sort_2 9 0.28 len(0.00) dep(0.17) conc(0.11)
+10 merge_in_sort_3 10 0.32 len(0.00) dep(0.17) conc(0.15)

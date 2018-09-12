@@ -1,0 +1,2 @@
+make: 'multisort' is up to date.
+gcc -std=c99 -Wall -O2 -fopenmp multisort-omp.c kernels.o -lm -o multisort-omp 

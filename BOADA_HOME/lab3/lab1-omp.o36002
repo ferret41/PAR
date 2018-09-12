@@ -1,0 +1,269 @@
+make: 'mandel-omp' is up to date.
+Welcome to Extrae 3.5.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 8
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2108/lab3
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 8 threads
+
+
+Mandelbrot program
+center = (0, 0), size = 2
+maximum iterations = 10000
+
+Total execution time: 1.379853s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000007.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 3.5.1
+mpi2prv: Assigned nodes < boada-4 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000000.mpit is object 1.1.1 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000001.mpit is object 1.1.2 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000002.mpit is object 1.1.3 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000003.mpit is object 1.1.4 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000004.mpit is object 1.1.5 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000005.mpit is object 1.1.6 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000006.mpit is object 1.1.7 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001249000000000007.mpit is object 1.1.8 on node boada-4 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Time Synchronization disabled.
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 838848 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 6698 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! mandel-omp_8_STATIC.prv has been generated.
+Welcome to Extrae 3.5.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 8
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2108/lab3
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 8 threads
+
+
+Mandelbrot program
+center = (0, 0), size = 2
+maximum iterations = 10000
+
+Total execution time: 0.470159s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000007.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 3.5.1
+mpi2prv: Assigned nodes < boada-4 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000000.mpit is object 1.1.1 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000001.mpit is object 1.1.2 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000002.mpit is object 1.1.3 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000003.mpit is object 1.1.4 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000004.mpit is object 1.1.5 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000005.mpit is object 1.1.6 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000006.mpit is object 1.1.7 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001262000000000007.mpit is object 1.1.8 on node boada-4 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Time Synchronization disabled.
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 838848 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 15719 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! mandel-omp_8_STATIC,10.prv has been generated.
+Welcome to Extrae 3.5.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 8
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2108/lab3
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 8 threads
+
+
+Mandelbrot program
+center = (0, 0), size = 2
+maximum iterations = 10000
+
+Total execution time: 0.447468s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000007.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 3.5.1
+mpi2prv: Assigned nodes < boada-4 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000000.mpit is object 1.1.1 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000001.mpit is object 1.1.2 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000002.mpit is object 1.1.3 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000003.mpit is object 1.1.4 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000004.mpit is object 1.1.5 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000005.mpit is object 1.1.6 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000006.mpit is object 1.1.7 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001282000000000007.mpit is object 1.1.8 on node boada-4 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Time Synchronization disabled.
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 838848 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 15677 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! mandel-omp_8_DYNAMIC,10.prv has been generated.
+Welcome to Extrae 3.5.1
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 8
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2108/lab3
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 8 threads
+
+
+Mandelbrot program
+center = (0, 0), size = 2
+maximum iterations = 10000
+
+Total execution time: 0.906499s
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000007.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.
+merger: Output trace format is: Paraver
+merger: Extrae 3.5.1
+mpi2prv: Assigned nodes < boada-4 >
+mpi2prv: Assigned size per processor < <1 Mbyte >
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000000.mpit is object 1.1.1 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000001.mpit is object 1.1.2 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000002.mpit is object 1.1.3 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000003.mpit is object 1.1.4 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000004.mpit is object 1.1.5 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000005.mpit is object 1.1.6 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000006.mpit is object 1.1.7 on node boada-4 assigned to processor 0
+mpi2prv: File /scratch/nas/1/par2108/lab3/set-0/TRACE@boada-4.0000001302000000000007.mpit is object 1.1.8 on node boada-4 assigned to processor 0
+mpi2prv: Time synchronization has been turned off
+mpi2prv: Checking for target directory existance... exists, ok!
+mpi2prv: Selected output trace format is Paraver
+mpi2prv: Stored trace format is Paraver
+mpi2prv: Searching synchronization points... done
+mpi2prv: Time Synchronization disabled.
+mpi2prv: Circular buffer enabled at tracing time? NO
+mpi2prv: Parsing intermediate files
+mpi2prv: Progress 1 of 2 ... 5% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Processor 0 succeeded to translate its assigned files
+mpi2prv: Elapsed time translating files: 0 hours 0 minutes 0 seconds
+mpi2prv: Elapsed time sorting addresses: 0 hours 0 minutes 0 seconds
+mpi2prv: Generating tracefile (intermediate buffers of 838848 events)
+         This process can take a while. Please, be patient.
+mpi2prv: Progress 2 of 2 ... 6% 10% 15% 20% 25% 30% 35% 40% 45% 50% 55% 60% 65% 70% 75% 80% 85% 90% 95% done
+mpi2prv: Elapsed time merge step: 0 hours 0 minutes 0 seconds
+mpi2prv: Resulting tracefile occupies 8863 bytes
+mpi2prv: Removing temporal files... done
+mpi2prv: Elapsed time removing temporal files: 0 hours 0 minutes 0 seconds
+mpi2prv: Congratulations! mandel-omp_8_GUIDED,10.prv has been generated.

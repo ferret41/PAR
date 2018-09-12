@@ -1,0 +1,2 @@
+Number pi after 100000000 iterations = 3.141592653590426
+Total execution time: 0.788533s

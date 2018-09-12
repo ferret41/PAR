@@ -1,0 +1,796 @@
+DEFAULT_OPTIONS
+
+LEVEL               THREAD
+UNITS               NANOSEC
+LOOK_BACK           100
+SPEED               1
+FLAG_ICONS          ENABLED
+NUM_OF_STATE_COLORS 1000
+YMAX_SCALE          37
+
+
+DEFAULT_SEMANTIC
+
+THREAD_FUNC          State As Is
+
+
+STATES
+0    Idle
+1    Running
+2    Not created
+3    Waiting a message
+4    Blocking Send
+5    Synchronization
+6    Test/Probe
+7    Scheduling and Fork/Join
+8    Wait/WaitAll
+9    Blocked
+10    Immediate Send
+11    Immediate Receive
+12    I/O
+13    Group Communication
+14    Tracing Disabled
+15    Others
+16    Send Receive
+17    Memory transfer
+18    Profiling
+19    On-line analysis
+20    Remote memory access
+21    Atomic memory operation
+22    Memory ordering operation
+23    Distributed locking
+24    Overhead
+25    One-sided op
+26    Startup latency
+27    Waiting links
+28    Data copy
+29    RTT
+30    Allocating memory
+31    Freeing memory
+
+
+STATES_COLOR
+0    {117,195,255}
+1    {0,0,255}
+2    {255,255,255}
+3    {255,0,0}
+4    {255,0,174}
+5    {179,0,0}
+6    {0,255,0}
+7    {255,255,0}
+8    {235,0,0}
+9    {0,162,0}
+10    {255,0,255}
+11    {100,100,177}
+12    {172,174,41}
+13    {255,144,26}
+14    {2,255,177}
+15    {192,224,0}
+16    {66,66,66}
+17    {255,0,96}
+18    {169,169,169}
+19    {169,0,0}
+20    {0,109,255}
+21    {200,61,68}
+22    {200,66,0}
+23    {0,41,0}
+24    {139,121,177}
+25    {116,116,116}
+26    {200,50,89}
+27    {255,171,98}
+28    {0,68,189}
+29    {52,43,0}
+30    {255,46,0}
+31    {100,216,32}
+
+
+EVENT_TYPE
+0 60000016  OpenMP Worksharing join
+VALUES
+0 End
+1 Join (w wait)
+2 Join (w/o wait)
+
+EVENT_TYPE
+0 60000011  OpenMP Worksharing work dispatcher
+VALUES
+0 End
+1 Begin
+
+EVENT_TYPE
+0 60000001  Parallel (OMP)
+VALUES
+0 close
+1 DO (open)
+2 SECTIONS (open)
+3 REGION (open)
+
+EVENT_TYPE
+0 60000002 Worksharing (OMP)
+VALUES
+0 End
+4 DO 
+5 SECTIONS
+6 SINGLE
+
+EVENT_TYPE
+0    60000018    Executed OpenMP parallel function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 main._omp_fn.0
+
+
+EVENT_TYPE
+0    60000118    Executed OpenMP parallel function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (3dfft_omp.c, 3dfft_omp)
+
+
+EVENT_TYPE
+0    60000023    Executed OpenMP task function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 main._omp_fn.0
+
+
+EVENT_TYPE
+0    60000123    Executed OpenMP task function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (3dfft_omp.c, 3dfft_omp)
+
+
+EVENT_TYPE
+0    60000024    Instantiated OpenMP task function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 main._omp_fn.0
+
+
+EVENT_TYPE
+0    60000124    Instantiated OpenMP task function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (3dfft_omp.c, 3dfft_omp)
+
+
+EVENT_TYPE
+0 65000000 Number of OpenMP instantiated tasks
+0 65000001 Number of OpenMP executed tasks
+
+EVENT_TYPE
+0    60000020    pthread function
+VALUES
+0   End
+1 Unresolved
+2 _NOT_Found
+3 main._omp_fn.0
+
+
+EVENT_TYPE
+0    60000120    pthread function line and file
+VALUES
+0   End
+1 0 (Unresolved)
+2 0 (_NOT_Found)
+3 0 (3dfft_omp.c, 3dfft_omp)
+
+
+EVENT_TYPE
+6    40000033    Executing CPU
+6    40000133    CPU-Event sampling interval
+
+
+EVENT_TYPE
+6    40000001    Application
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000050    RAW clock() value from system
+
+
+EVENT_TYPE
+6    40000003    Flushing Traces
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000002    Trace initialization
+VALUES
+0      End
+1      Begin
+
+
+EVENT_TYPE
+6    40000036    Process IDentifier
+6    40000037    Parent Process IDentifier
+6    40000038    fork() depth
+
+
+
+
+GRADIENT_COLOR
+0    {0,255,2}
+1    {0,244,13}
+2    {0,232,25}
+3    {0,220,37}
+4    {0,209,48}
+5    {0,197,60}
+6    {0,185,72}
+7    {0,173,84}
+8    {0,162,95}
+9    {0,150,107}
+10    {0,138,119}
+11    {0,127,130}
+12    {0,115,142}
+13    {0,103,154}
+14    {0,91,166}
+
+
+GRADIENT_NAMES
+0    Gradient 0
+1    Grad. 1/MPI Events
+2    Grad. 2/OMP Events
+3    Grad. 3/OMP locks
+4    Grad. 4/User func
+5    Grad. 5/User Events
+6    Grad. 6/General Events
+7    Grad. 7/Hardware Counters
+8    Gradient 8
+9    Gradient 9
+10    Gradient 10
+11    Gradient 11
+12    Gradient 12
+13    Gradient 13
+14    Gradient 14
+
+
+EVENT_TYPE
+0 41000000 Object addresses for task 1.1
+VALUES
+1 in_fftw [0x086e04e0-0x106e04df]
+2 tmp_fftw [0x006e04e0-0x086e04df]
+3 completed.6898 [0x006e04a8-0x006e04a8]
+4 padt [0x004c9b20-0x004c9b47]
+5 plnr [0x106e04e0-0x106e04e7]
+6 sintab [0x004c9c00-0x004c9cff]
+7 roundtab [0x004c9b80-0x004c9bff]
+8 stimeout [0x004c9e88-0x004c9e8f]
+9 padt.4117 [0x004c9e60-0x004c9e87]
+10 s [0x004c9fe0-0x004ca09f]
+11 padt.3620 [0x004ca0e0-0x004ca0ff]
+12 sadt.3625 [0x004ca0c0-0x004ca0d7]
+13 padt.3683 [0x004ca140-0x004ca15f]
+14 sadt.3688 [0x004ca120-0x004ca137]
+15 adt_before [0x004ca160-0x004ca177]
+16 adt_after [0x004ca180-0x004ca197]
+17 half_tw.3664 [0x004ca200-0x004ca207]
+18 padt.3688 [0x004ca1e0-0x004ca1ff]
+19 sadt.3692 [0x004ca1c0-0x004ca1d7]
+20 primes.3715 [0x004ca260-0x004ca27f]
+21 padt.3730 [0x004ca280-0x004ca29f]
+22 sadt.3735 [0x004ca240-0x004ca257]
+23 padt [0x004ca2c0-0x004ca2e7]
+24 maxnbufs [0x004ca340-0x004ca34f]
+25 padt.3690 [0x004ca360-0x004ca37f]
+26 sadt.3698 [0x004ca320-0x004ca337]
+27 padt.3721 [0x004ca3c0-0x004ca3df]
+28 omegas [0x106e04e8-0x106e04ef]
+29 sadt.3725 [0x004ca3a0-0x004ca3b7]
+30 padt.3787 [0x004ca480-0x004ca49f]
+31 radices.3799 [0x004ca440-0x004ca477]
+32 padt.3693 [0x004ca500-0x004ca51f]
+33 sadt.3698 [0x004ca4e0-0x004ca4f7]
+34 padt.3781 [0x004ca560-0x004ca57f]
+35 tw.3691 [0x004ca580-0x004ca587]
+36 padt.3747 [0x004ca5e0-0x004ca5ff]
+37 sadt.3763 [0x004ca5c0-0x004ca5d7]
+38 padt.3677 [0x004ca660-0x004ca67f]
+39 sadt.3683 [0x004ca630-0x004ca647]
+40 buddies.3689 [0x004ca620-0x004ca627]
+41 padt.3671 [0x004ca6e0-0x004ca6ff]
+42 sadt.3678 [0x004ca6b0-0x004ca6c7]
+43 buddies.3684 [0x004ca6a0-0x004ca6ab]
+44 desc [0x004cae20-0x004cae77]
+45 desc [0x004caee0-0x004caf37]
+46 desc [0x004caf40-0x004caf97]
+47 twinstr [0x004caf98-0x004caf9f]
+48 desc [0x004cafa0-0x004caff7]
+49 twinstr [0x004caff8-0x004cafff]
+50 desc [0x004cb000-0x004cb057]
+51 twinstr [0x004cb060-0x004cb06f]
+52 desc [0x004cb080-0x004cb0d7]
+53 twinstr [0x004cb0d8-0x004cb0df]
+54 desc [0x004cb100-0x004cb157]
+55 twinstr [0x004cb158-0x004cb15f]
+56 desc [0x004cb180-0x004cb1d7]
+57 desc [0x004cb1e0-0x004cb237]
+58 twinstr [0x004cb238-0x004cb23f]
+59 desc [0x004cb260-0x004cb2b7]
+60 desc [0x004cb2c0-0x004cb317]
+61 twinstr [0x004cb320-0x004cb337]
+62 desc [0x004cb360-0x004cb3b7]
+63 twinstr [0x004cb3b8-0x004cb3c3]
+64 desc [0x004cb3e0-0x004cb437]
+65 twinstr [0x004cb438-0x004cb443]
+66 desc [0x004cb460-0x004cb4b7]
+67 desc [0x004cb4c0-0x004cb517]
+68 twinstr [0x004cb518-0x004cb51f]
+69 desc [0x004cb520-0x004cb577]
+70 desc [0x004cb580-0x004cb5d7]
+71 desc [0x004cb5e0-0x004cb637]
+72 desc [0x004cb640-0x004cb697]
+73 twinstr [0x004cb6a0-0x004cb6af]
+74 desc [0x004cb6c0-0x004cb717]
+75 desc [0x004cb760-0x004cb7b7]
+76 s [0x004cb9e0-0x004cbb1f]
+77 padt.4204 [0x004cbb80-0x004cbb9f]
+78 sadt.4208 [0x004cbb60-0x004cbb77]
+79 padt.3816 [0x004cbc00-0x004cbc1f]
+80 sadt.3822 [0x004cbbd0-0x004cbbe7]
+81 buddies.3828 [0x004cbbc0-0x004cbbc7]
+82 padt.3755 [0x004cbc60-0x004cbc7f]
+83 sadt.3760 [0x004cbc40-0x004cbc57]
+84 padt.3816 [0x004cbce0-0x004cbcff]
+85 sadt.3821 [0x004cbcc0-0x004cbcd7]
+86 adt_before [0x004cbd00-0x004cbd17]
+87 adt_after [0x004cbd20-0x004cbd37]
+88 padt.4420 [0x004cbdc0-0x004cbddf]
+89 sadt.4424 [0x004cbda0-0x004cbdb7]
+90 adt_gcd [0x004cbde0-0x004cbdff]
+91 adt_cut [0x004cbe00-0x004cbe1f]
+92 adt_toms513 [0x004cbe20-0x004cbe3f]
+93 half_tw.3837 [0x004cbea0-0x004cbea7]
+94 padt.3863 [0x004cbe80-0x004cbe9f]
+95 sadt.3867 [0x004cbe60-0x004cbe77]
+96 kstr.3775 [0x004cbee0-0x004cbf67]
+97 padt [0x004cbf80-0x004cbfa7]
+98 maxnbufs [0x004cc000-0x004cc00f]
+99 padt.3838 [0x004cc020-0x004cc03f]
+100 sadt.3846 [0x004cbfe0-0x004cbff7]
+101 padt.3757 [0x004cc080-0x004cc09f]
+102 sadt.3762 [0x004cc060-0x004cc077]
+103 padt.3981 [0x004cc0e0-0x004cc0ff]
+104 sadt.3992 [0x004cc0c0-0x004cc0d7]
+105 primes.3851 [0x004cc160-0x004cc17f]
+106 padt.3872 [0x004cc180-0x004cc19f]
+107 omegas [0x106e04f8-0x106e04ff]
+108 sadt.3877 [0x004cc140-0x004cc157]
+109 padt.3882 [0x004cc200-0x004cc21f]
+110 sadt.3887 [0x004cc1e0-0x004cc1f7]
+111 padt.4301 [0x004cc300-0x004cc31f]
+112 sadt.4313 [0x004cc2e0-0x004cc2f7]
+113 padt.3825 [0x004cc360-0x004cc37f]
+114 sadt.3830 [0x004cc340-0x004cc357]
+115 padt.3812 [0x004cc3e0-0x004cc3ff]
+116 sadt.3818 [0x004cc3b0-0x004cc3c7]
+117 buddies.3824 [0x004cc3a0-0x004cc3a7]
+118 padt.3792 [0x004cc440-0x004cc45f]
+119 sadt.3796 [0x004cc420-0x004cc437]
+120 padt.3806 [0x004cc4c0-0x004cc4df]
+121 sadt.3813 [0x004cc490-0x004cc4a7]
+122 buddies.3819 [0x004cc480-0x004cc48b]
+123 maxnbufs [0x004cc540-0x004cc54f]
+124 padt.4027 [0x004cc560-0x004cc57f]
+125 sadt.4033 [0x004cc520-0x004cc537]
+126 padt [0x004cc5a0-0x004cc5c7]
+127 padt.3997 [0x004cc640-0x004cc65f]
+128 sadt.4004 [0x004cc610-0x004cc627]
+129 buddies.4010 [0x004cc600-0x004cc60b]
+130 padt.3969 [0x004cc6a0-0x004cc6bf]
+131 tw.3798 [0x004cc6c0-0x004cc6c7]
+132 desc [0x004cd420-0x004cd45f]
+133 twinstr [0x004cd460-0x004cd467]
+134 desc [0x004cd480-0x004cd4bf]
+135 twinstr [0x004cd4c0-0x004cd4c7]
+136 desc [0x004cd4e0-0x004cd517]
+137 desc [0x004cd520-0x004cd55f]
+138 twinstr [0x004cd560-0x004cd567]
+139 desc [0x004cd580-0x004cd5b7]
+140 desc [0x004cd5c0-0x004cd5ff]
+141 twinstr [0x004cd600-0x004cd607]
+142 desc [0x004cd620-0x004cd657]
+143 desc [0x004cd680-0x004cd6bf]
+144 twinstr [0x004cd6c0-0x004cd6d3]
+145 desc [0x004cd6e0-0x004cd717]
+146 desc [0x004cd720-0x004cd75f]
+147 twinstr [0x004cd760-0x004cd767]
+148 desc [0x004cd780-0x004cd7bf]
+149 twinstr [0x004cd7c0-0x004cd7c7]
+150 desc [0x004cd7e0-0x004cd81f]
+151 twinstr [0x004cd820-0x004cd82f]
+152 desc [0x004cd840-0x004cd87f]
+153 twinstr [0x004cd880-0x004cd887]
+154 desc [0x004cd8a0-0x004cd8d7]
+155 desc [0x004cd920-0x004cd95f]
+156 twinstr [0x004cd960-0x004cd973]
+157 desc [0x004cd980-0x004cd9bf]
+158 twinstr [0x004cd9c0-0x004cd9c7]
+159 desc [0x004cd9e0-0x004cda17]
+160 desc [0x004cda40-0x004cda7f]
+161 twinstr [0x004cda80-0x004cda93]
+162 desc [0x004cdaa0-0x004cdad7]
+163 desc [0x004cdae0-0x004cdb17]
+164 desc [0x004cdb20-0x004cdb5f]
+165 twinstr [0x004cdb60-0x004cdb6b]
+166 desc [0x004cdb80-0x004cdbb7]
+167 desc [0x004cdbc0-0x004cdbff]
+168 twinstr [0x004cdc00-0x004cdc07]
+169 desc [0x004cdc20-0x004cdc5f]
+170 twinstr [0x004cdc60-0x004cdc67]
+171 desc [0x004cdc80-0x004cdcbf]
+172 twinstr [0x004cdcc0-0x004cdcc7]
+173 desc [0x004cdce0-0x004cdd1f]
+174 twinstr [0x004cdd20-0x004cdd27]
+175 desc [0x004cdd40-0x004cdd77]
+176 desc [0x004cdd80-0x004cddb7]
+177 desc [0x004cddc0-0x004cddf7]
+178 desc [0x004cde40-0x004cde7f]
+179 twinstr [0x004cde80-0x004cde87]
+180 desc [0x004cdea0-0x004cded7]
+181 desc [0x004cdee0-0x004cdf17]
+182 desc [0x004cdf20-0x004cdf5f]
+183 twinstr [0x004cdf60-0x004cdf67]
+184 desc [0x004cdf80-0x004cdfb7]
+185 desc [0x004ced00-0x004ced37]
+186 desc [0x004ced40-0x004ced7f]
+187 twinstr [0x004ced80-0x004ced93]
+188 desc [0x004ceda0-0x004cedd7]
+189 desc [0x004cee00-0x004cee37]
+190 desc [0x004cee40-0x004cee7f]
+191 twinstr [0x004cee80-0x004cee87]
+192 desc [0x004ceea0-0x004ceed7]
+193 desc [0x004cef60-0x004cef9f]
+194 twinstr [0x004cefa0-0x004cefa7]
+195 desc [0x004cefc0-0x004cefff]
+196 twinstr [0x004cf000-0x004cf007]
+197 desc [0x004cf020-0x004cf057]
+198 desc [0x004cf060-0x004cf09f]
+199 twinstr [0x004cf0a0-0x004cf0a7]
+200 desc [0x004cf0c0-0x004cf0f7]
+201 desc [0x004cf100-0x004cf137]
+202 desc [0x004cf140-0x004cf17f]
+203 twinstr [0x004cf180-0x004cf187]
+204 desc [0x004cf1a0-0x004cf1d7]
+205 desc [0x004cf1e0-0x004cf21f]
+206 twinstr [0x004cf220-0x004cf22b]
+207 desc [0x004cf240-0x004cf27f]
+208 twinstr [0x004cf280-0x004cf287]
+209 desc [0x004cf2a0-0x004cf2df]
+210 twinstr [0x004cf2e0-0x004cf2e7]
+211 desc [0x004cf300-0x004cf337]
+212 desc [0x004cf340-0x004cf37f]
+213 twinstr [0x004cf380-0x004cf387]
+214 desc [0x004cf3a0-0x004cf3df]
+215 twinstr [0x004cf3e0-0x004cf3e7]
+216 desc [0x004cf400-0x004cf437]
+217 desc [0x004cf440-0x004cf47f]
+218 twinstr [0x004cf480-0x004cf487]
+219 desc [0x004cf4a0-0x004cf4df]
+220 twinstr [0x004cf4e0-0x004cf4e7]
+221 desc [0x004cf500-0x004cf53f]
+222 twinstr [0x004cf540-0x004cf553]
+223 desc [0x004cf560-0x004cf59f]
+224 twinstr [0x004cf5a0-0x004cf5ab]
+225 desc [0x004cf5c0-0x004cf5ff]
+226 twinstr [0x004cf600-0x004cf607]
+227 desc [0x004cf620-0x004cf657]
+228 desc [0x004cf680-0x004cf6bf]
+229 twinstr [0x004cf6c0-0x004cf6c7]
+230 desc [0x004cf6e0-0x004cf717]
+231 desc [0x004cf740-0x004cf77f]
+232 twinstr [0x004cf780-0x004cf787]
+233 desc [0x004cf7a0-0x004cf7d7]
+234 desc [0x004cf7e0-0x004cf81f]
+235 twinstr [0x004cf820-0x004cf827]
+236 desc [0x004cf840-0x004cf87f]
+237 twinstr [0x004cf880-0x004cf88b]
+238 desc [0x004cf8a0-0x004cf8df]
+239 twinstr [0x004cf8e0-0x004cf8e7]
+240 desc [0x004cf900-0x004cf937]
+241 desc [0x004cf9a0-0x004cf9df]
+242 desc [0x004cf9e0-0x004cfa1f]
+243 s [0x004cfb20-0x004cfb8f]
+244 padt.3943 [0x004cfbe0-0x004cfbff]
+245 reodft010e_tw.3911 [0x004cfc00-0x004cfc0b]
+246 reodft11e_tw.3912 [0x004cfc0c-0x004cfc17]
+247 sadt.3947 [0x004cfbc0-0x004cfbd7]
+248 padt.3943 [0x004cfc60-0x004cfc7f]
+249 reodft010e_tw.3912 [0x004cfc80-0x004cfc8b]
+250 sadt.3953 [0x004cfc40-0x004cfc57]
+251 padt.3831 [0x004cfce0-0x004cfcff]
+252 sadt.3836 [0x004cfcc0-0x004cfcd7]
+253 padt.3831 [0x004cfd60-0x004cfd7f]
+254 sadt.3836 [0x004cfd40-0x004cfd57]
+255 reodft00e_tw.3865 [0x004cfe20-0x004cfe2b]
+256 padt.3899 [0x004cfe00-0x004cfe1f]
+257 sadt.3903 [0x004cfde0-0x004cfdf7]
+258 padt.3899 [0x004cfe80-0x004cfe9f]
+259 sadt.3903 [0x004cfe60-0x004cfe77]
+260 twlist [0x106e0500-0x106e0867]
+261 padt.3750 [0x004cff80-0x004cff9f]
+262 desc [0x004cffc0-0x004d0017]
+263 twinstr [0x004d0018-0x004d001f]
+264 desc [0x004d0020-0x004d0077]
+265 twinstr [0x004d0078-0x004d007f]
+266 desc [0x004d0080-0x004d00d7]
+267 desc [0x004d00e0-0x004d0137]
+268 twinstr [0x004d0140-0x004d0153]
+269 desc [0x004d0160-0x004d01b7]
+270 twinstr [0x004d01b8-0x004d01bf]
+271 desc [0x004d01c0-0x004d0217]
+272 twinstr [0x004d0218-0x004d021f]
+273 desc [0x004d0220-0x004d0277]
+274 desc [0x004d0280-0x004d02d7]
+275 twinstr [0x004d02e0-0x004d02f3]
+276 desc [0x004d0300-0x004d0357]
+277 twinstr [0x004d0360-0x004d0373]
+278 desc [0x004d0380-0x004d03d7]
+279 desc [0x004d03e0-0x004d0437]
+280 desc [0x004d0440-0x004d0497]
+281 desc [0x004d04a0-0x004d04f7]
+282 twinstr [0x004d04f8-0x004d04ff]
+283 desc [0x004d0500-0x004d0557]
+284 twinstr [0x004d0558-0x004d055f]
+285 desc [0x004d0560-0x004d05b7]
+286 desc [0x004d05c0-0x004d0617]
+287 twinstr [0x004d0618-0x004d061f]
+288 desc [0x004d0620-0x004d0677]
+289 twinstr [0x004d0680-0x004d0693]
+290 desc [0x004d06a0-0x004d06f7]
+291 desc [0x004d0700-0x004d0757]
+292 desc [0x004d0760-0x004d07b7]
+293 twinstr [0x004d07b8-0x004d07bf]
+294 desc [0x004d07c0-0x004d0817]
+295 twinstr [0x004d0818-0x004d081f]
+296 desc [0x004d0820-0x004d0877]
+297 twinstr [0x004d0878-0x004d087f]
+298 desc [0x004d0880-0x004d08d7]
+299 twinstr [0x004d08d8-0x004d08df]
+300 desc [0x004d08e0-0x004d0937]
+301 twinstr [0x004d0938-0x004d093f]
+302 desc [0x004d0940-0x004d0997]
+303 twinstr [0x004d0998-0x004d099f]
+304 desc [0x004d09a0-0x004d09f7]
+305 twinstr [0x004d09f8-0x004d09ff]
+306 desc [0x004d0a00-0x004d0a57]
+307 desc [0x004d0a80-0x004d0ad7]
+308 twinstr [0x004d0ad8-0x004d0adf]
+309 desc [0x004d0ae0-0x004d0b37]
+310 twinstr [0x004d0b38-0x004d0b3f]
+311 padt.3850 [0x004d0b80-0x004d0b9f]
+312 sadt.3861 [0x004d0b60-0x004d0b77]
+313 padt.3958 [0x004d0c00-0x004d0c1f]
+314 padt.3913 [0x004d0c80-0x004d0c9f]
+315 desc [0x004d0d60-0x004d0d9f]
+316 twinstr [0x004d0da0-0x004d0db3]
+317 desc [0x004d0de0-0x004d0e17]
+318 desc [0x004d0e20-0x004d0e5f]
+319 twinstr [0x004d0e60-0x004d0e67]
+320 desc [0x004d0e80-0x004d0eb7]
+321 desc [0x004d0ec0-0x004d0ef7]
+322 desc [0x004d0f20-0x004d0f5f]
+323 twinstr [0x004d0f60-0x004d0f67]
+324 desc [0x004d0f80-0x004d0fbf]
+325 twinstr [0x004d0fc0-0x004d0fc7]
+326 desc [0x004d0fe0-0x004d1017]
+327 desc [0x004d1020-0x004d105f]
+328 twinstr [0x004d1060-0x004d1073]
+329 desc [0x004d1080-0x004d10bf]
+330 twinstr [0x004d10c0-0x004d10c7]
+331 desc [0x004d10e0-0x004d1117]
+332 desc [0x004d1120-0x004d1157]
+333 desc [0x004d1160-0x004d1197]
+334 desc [0x004d11a0-0x004d11df]
+335 twinstr [0x004d11e0-0x004d11e7]
+336 desc [0x004d1200-0x004d123f]
+337 twinstr [0x004d1240-0x004d1253]
+338 desc [0x004d1260-0x004d1297]
+339 desc [0x004d12a0-0x004d12d7]
+340 desc [0x004d12e0-0x004d1317]
+341 desc [0x004d1320-0x004d135f]
+342 twinstr [0x004d1360-0x004d1373]
+343 desc [0x004d1380-0x004d13bf]
+344 twinstr [0x004d13c0-0x004d13c7]
+345 desc [0x004d13e0-0x004d141f]
+346 twinstr [0x004d1420-0x004d142f]
+347 desc [0x004d1440-0x004d147f]
+348 twinstr [0x004d1480-0x004d1487]
+349 desc [0x004d14a0-0x004d14df]
+350 twinstr [0x004d14e0-0x004d14f3]
+351 desc [0x004d1500-0x004d153f]
+352 twinstr [0x004d1540-0x004d154b]
+353 desc [0x004d1560-0x004d1597]
+354 desc [0x004d15a0-0x004d15df]
+355 twinstr [0x004d15e0-0x004d15e7]
+356 desc [0x004d1600-0x004d1637]
+357 desc [0x004d1640-0x004d167f]
+358 twinstr [0x004d1680-0x004d1687]
+359 desc [0x004d16a0-0x004d16df]
+360 twinstr [0x004d16e0-0x004d16e7]
+361 desc [0x004d1700-0x004d1737]
+362 desc [0x004d1740-0x004d177f]
+363 twinstr [0x004d1780-0x004d1793]
+364 desc [0x004d17a0-0x004d17d7]
+365 desc [0x004d17e0-0x004d181f]
+366 twinstr [0x004d1820-0x004d1827]
+367 desc [0x004d1840-0x004d187f]
+368 twinstr [0x004d1880-0x004d188b]
+369 desc [0x004d18a0-0x004d18df]
+370 twinstr [0x004d18e0-0x004d18ef]
+371 desc [0x004d1900-0x004d193f]
+372 twinstr [0x004d1940-0x004d1953]
+373 desc [0x004d1960-0x004d199f]
+374 twinstr [0x004d19a0-0x004d19a7]
+375 desc [0x004d19c0-0x004d19ff]
+376 twinstr [0x004d1a00-0x004d1a07]
+377 desc [0x004d1a20-0x004d1a5f]
+378 twinstr [0x004d1a60-0x004d1a67]
+379 desc [0x004d1a80-0x004d1ab7]
+380 desc [0x004d1ac0-0x004d1af7]
+381 desc [0x004d1b00-0x004d1b37]
+382 desc [0x004d1b40-0x004d1b7f]
+383 twinstr [0x004d1b80-0x004d1b87]
+384 desc [0x004d1ba0-0x004d1bdf]
+385 twinstr [0x004d1be0-0x004d1beb]
+386 desc [0x004d1c00-0x004d1c37]
+387 desc [0x004d1c40-0x004d1c7f]
+388 twinstr [0x004d1c80-0x004d1c87]
+389 desc [0x004d1ca0-0x004d1cdf]
+390 twinstr [0x004d1ce0-0x004d1ce7]
+391 desc [0x004d1d00-0x004d1d37]
+392 desc [0x004d1d40-0x004d1d7f]
+393 twinstr [0x004d1d80-0x004d1d87]
+394 desc [0x004d1da0-0x004d1dd7]
+395 desc [0x004d1de0-0x004d1e1f]
+396 twinstr [0x004d1e20-0x004d1e27]
+397 desc [0x004d1e40-0x004d1e77]
+398 desc [0x004d1e80-0x004d1ebf]
+399 twinstr [0x004d1ec0-0x004d1ec7]
+400 desc [0x004d1ee0-0x004d1f1f]
+401 twinstr [0x004d1f20-0x004d1f2f]
+402 desc [0x004d1f40-0x004d1f7f]
+403 twinstr [0x004d1f80-0x004d1f87]
+404 desc [0x004d1fa0-0x004d1fd7]
+405 desc [0x004d1fe0-0x004d201f]
+406 twinstr [0x004d2020-0x004d2027]
+407 desc [0x004d2040-0x004d2077]
+408 desc [0x004d2080-0x004d20bf]
+409 twinstr [0x004d20c0-0x004d20cf]
+410 desc [0x004d20e0-0x004d211f]
+411 twinstr [0x004d2120-0x004d2127]
+412 desc [0x004d2140-0x004d2177]
+413 desc [0x004d2180-0x004d21b7]
+414 desc [0x004d21c0-0x004d21ff]
+415 twinstr [0x004d2200-0x004d2207]
+416 desc [0x004d2220-0x004d225f]
+417 twinstr [0x004d2260-0x004d2267]
+418 desc [0x004d2280-0x004d22bf]
+419 twinstr [0x004d22c0-0x004d22c7]
+420 desc [0x004d22e0-0x004d2317]
+421 desc [0x004d2320-0x004d235f]
+422 twinstr [0x004d2360-0x004d2373]
+423 desc [0x004d2380-0x004d23b7]
+424 desc [0x004d23c0-0x004d23f7]
+425 desc [0x004d2420-0x004d2457]
+426 desc [0x004d2460-0x004d2497]
+427 desc [0x004d24a0-0x004d24df]
+428 twinstr [0x004d24e0-0x004d24e7]
+429 desc [0x004d2500-0x004d2537]
+430 desc [0x004d2560-0x004d259f]
+431 twinstr [0x004d25a0-0x004d25b3]
+432 desc [0x004d25c0-0x004d25ff]
+433 twinstr [0x004d2600-0x004d2607]
+434 desc [0x004d2620-0x004d2657]
+435 desc [0x004d2660-0x004d269f]
+436 twinstr [0x004d26a0-0x004d26b3]
+437 desc [0x004d26c0-0x004d26ff]
+438 twinstr [0x004d2700-0x004d2707]
+439 desc [0x004d2720-0x004d275f]
+440 twinstr [0x004d2760-0x004d2767]
+441 desc [0x004d2780-0x004d27b7]
+442 desc [0x004d27c0-0x004d27f7]
+443 desc [0x004d2800-0x004d283f]
+444 twinstr [0x004d2840-0x004d2853]
+445 desc [0x004d2860-0x004d289f]
+446 twinstr [0x004d28a0-0x004d28a7]
+447 desc [0x004d28c0-0x004d28f7]
+448 desc [0x004d2900-0x004d2937]
+449 desc [0x004d2940-0x004d297f]
+450 twinstr [0x004d2980-0x004d2987]
+451 desc [0x004d29a0-0x004d29df]
+452 twinstr [0x004d29e0-0x004d29e7]
+453 desc [0x004d2a00-0x004d2a3f]
+454 twinstr [0x004d2a40-0x004d2a47]
+455 desc [0x004d2a60-0x004d2a9f]
+456 twinstr [0x004d2aa0-0x004d2aa7]
+457 desc [0x004d2ac0-0x004d2aff]
+458 twinstr [0x004d2b00-0x004d2b07]
+459 desc [0x004d2b20-0x004d2b5f]
+460 twinstr [0x004d2b60-0x004d2b67]
+461 desc [0x004d2b80-0x004d2bb7]
+462 desc [0x004d2bc0-0x004d2bf7]
+463 desc [0x004d2c00-0x004d2c3f]
+464 twinstr [0x004d2c40-0x004d2c47]
+465 desc [0x004d2c60-0x004d2c9f]
+466 twinstr [0x004d2ca0-0x004d2ca7]
+467 desc [0x004d2cc0-0x004d2cff]
+468 twinstr [0x004d2d00-0x004d2d13]
+469 desc [0x004d2d20-0x004d2d5f]
+470 twinstr [0x004d2d60-0x004d2d67]
+471 desc [0x004d2d80-0x004d2dbf]
+472 twinstr [0x004d2dc0-0x004d2dc7]
+473 desc [0x004d2de0-0x004d2e17]
+474 desc [0x004d2e20-0x004d2e57]
+475 desc [0x004d2e60-0x004d2e97]
+476 desc [0x004d2ea0-0x004d2ed7]
+477 desc [0x004d2f00-0x004d2f3f]
+478 twinstr [0x004d2f40-0x004d2f47]
+479 desc [0x004d2f60-0x004d2f97]
+480 desc [0x004d2fa0-0x004d2fdf]
+481 twinstr [0x004d2fe0-0x004d2fe7]
+482 padt.3708 [0x004d3040-0x004d305f]
+483 sadt.3715 [0x004d3020-0x004d3037]
+484 padt.3845 [0x004d30a0-0x004d30bf]
+485 padt.3785 [0x004d3100-0x004d311f]
+486 sadt.3790 [0x004d30e0-0x004d30f7]
+487 padt.3804 [0x004d3160-0x004d317f]
+488 sadt.3809 [0x004d3140-0x004d3157]
+489 padt.4042 [0x004d31c0-0x004d31df]
+490 sadt.4060 [0x004d31a0-0x004d31b7]
+491 padt.3868 [0x004d3260-0x004d327f]
+492 sadt.3874 [0x004d3240-0x004d3257]
+493 __FRAME_END__ [0x004e0180-0x004e017f]
+494 __GNU_EH_FRAME_HDR [0x004d3280-0x004d327f]
+495 stdout@@GLIBC_2.2.5 [0x006e0480-0x006e0487]
+496 fftwf_rdft_r2cfII_genus [0x004d0d30-0x004d0d3f]
+497 fftwf_rdft_hc2cb_genus [0x004d0cb0-0x004d0cc7]
+498 p_do_not_delete_inserted_for_tareador [0x006e04c0-0x006e04c7]
+499 fftwf_rdft_r2cbIII_genus [0x004d0d10-0x004d0d1f]
+500 p [0x106e0870-0x106e0877]
+501 fftwf_rdft_hf_genus [0x004d0d00-0x004d0d0f]
+502 fftwf_dft_t_genus [0x004cffa0-0x004cffaf]
+503 fftwf_rdft_hc2cf_genus [0x004d0cd0-0x004d0ce7]
+504 _IO_stdin_used [0x004c9720-0x004c9723]
+505 p1d [0x106e0878-0x106e087f]
+506 fftwf_solvtab_rdft_r2r [0x004cf960-0x004cf98f]
+507 _end [0x106e0880-0x106e087f]
+508 fftwf_an_INT_guaranteed_to_be_zero [0x004cfea0-0x004cfea7]
+509 __bss_start [0x006e0480-0x006e047f]
+510 fftwf_rdft_r2cf_genus [0x004d0d40-0x004d0d4f]
+511 fftwf_mksolver_hc2hc_hook [0x106e0868-0x106e086f]
+512 fftwf_rdft_hb_genus [0x004d0cf0-0x004d0cff]
+513 fftwf_mksolver_ct_hook [0x106e04f0-0x106e04f7]
+514 fftwf_rdft_r2r_genus [0x004d0ca0-0x004d0ca7]
+515 fftwf_solvtab_rdft_r2cb [0x004ce780-0x004cecff]
+516 fftwf_dft_n_genus [0x004cffb0-0x004cffbf]
+517 fftwf_rdft_r2cb_genus [0x004d0d20-0x004d0d2f]
+518 stderr@@GLIBC_2.2.5 [0x006e04a0-0x006e04a7]
+519 fftwf_solvtab_dft_standard [0x004caae0-0x004cae0f]
+520 fftwf_solvtab_rdft_r2cf [0x004ccea0-0x004cd41f]
+
+EVENT_TYPE
+9    40000018    Tracing mode:
+VALUES
+1      Detailed
+2      CPU Bursts
+
+

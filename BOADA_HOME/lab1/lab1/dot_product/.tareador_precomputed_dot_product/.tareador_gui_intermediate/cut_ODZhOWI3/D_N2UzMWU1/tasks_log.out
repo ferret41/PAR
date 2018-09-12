@@ -1,0 +1,17 @@
+TASK:0:MAIN_TAREADOR:1:7:0:105234
+ section:0:0:1:7:0:105234
+ section:0:1:None:7:105234:105234
+ TASK:1:init_A:2:2:15:244
+  0:128:0:loads::stores:[0,128)
+  section:1:0:2:2:15:244
+    0:128:0:loads::stores:[0,128)
+ TASK:2:init_B:4:4:244:505
+  12:128:12:loads::stores:[0,128)
+  section:2:0:4:4:244:505
+    12:128:12:loads::stores:[0,128)
+ TASK:3:dot_product:6:6:506:105234
+  0:128:0:loads:[0,128):stores:
+  12:128:12:loads:[0,128):stores:
+  section:3:0:6:6:506:105234
+    0:128:0:loads:[0,128):stores:
+    12:128:12:loads:[0,128):stores:
